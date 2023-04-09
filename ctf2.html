@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>AES加密 - CTF竞赛题目</title>
+  </head>
+  <body>
+    <h1>AES加密 - CTF竞赛题目</h1>
+    <p>以下是一个AES加密的密文，请使用给出的密钥和IV解密该密文并找出明文。</p>
+
+    <p>密文：</p>
+    <pre>
+      U2FsdGVkX18KjXN+QOgO8NlB1rJzoJF4E2y+ZXK4bm4=
+    </pre>
+
+    <p>密钥：</p>
+    <pre>
+      7365637265746b6579
+    </pre>
+
+    <p>IV：</p>
+    <pre>
+      6970736d6f64657369676e
+    </pre>
+
+    <form>
+      <label>请输入答案：</label>
+      <input type="text" id="answer" name="answer">
+      <button type="button" onclick="checkAnswer()">提交答案</button>
+    </form>
+
+    <script>
+      function checkAnswer() {
+        var answer = document.getElementById("answer").value.trim();
+        if (answer === "OpenAI is amazing!") {
+          alert("恭喜你，回答正确！");
+        } else {
+          alert("很遗憾，回答错误。请再试一次。");
+        }
+      }
+    </script>
+  </body>
+</html>
+该页面包括一个标题，题目描述，密文，密钥和IV的展示，以及一个表单，用户可以在其中输入答案并提交。
+提交答案时，页面会检查答案是否正确，并弹出相应的提示框。
