@@ -8,19 +8,19 @@
     <h1>AES加密 - CTF竞赛题目</h1>
     <p>以下是一个AES加密的密文，请使用给出的密钥和IV解密该密文并找出明文。</p>
 
-    <p>密文：</p>
+    <p>cipher：</p>
     <pre>
       U2FsdGVkX18KjXN+QOgO8NlB1rJzoJF4E2y+ZXK4bm4=
     </pre>
 
-    <p>密钥：</p>
+    <p>key：</p>
     <pre>
-      7365637265746b6579
+      comp7170comp7170
     </pre>
 
     <p>IV：</p>
     <pre>
-      6970736d6f64657369676e
+      \xca]\xaf\x96k\xd1XQ\xf5\n&/L\xf2\x8eJ
     </pre>
 
     <form>
@@ -32,10 +32,10 @@
     <script>
       function checkAnswer() {
         var answer = document.getElementById("answer").value.trim();
-        if (answer === "OpenAI is amazing!") {
-          alert("恭喜你，回答正确！");
+        if (answer === "i_love_kevin") {
+          alert("Congratulations, your answer is correct！");
         } else {
-          alert("很遗憾，回答错误。请再试一次。");
+          alert("Unfortunately, the answer was incorrect. Please try again.");
         }
       }
     </script>
